@@ -1,7 +1,43 @@
 :root {
-  --background-rgb: 237, 238, 240;
+  --background-rgb: 237 238 240;
+  --main-text-rgb: 64 65 70;
+  --card-background-rgb: 255 255 255;
+
+  --link-background-rgb: 90 100 230;
+  --link-hover-rgb: 255 255 255;
+  --link-border-radius: 4px;
+
+  --button-background-rgb: 255 255 255;
+
+  --font-weight-semibold: 600;
+
+  --spacing-med: 8px;
+  --spacing-lrg: 16px;
 }
 
 body {
   background-color: rgb(var(--background-rgb));
+  color: rgb(var(--main-text-rgb));
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+svg {
+  /* border: coral solid; */
+  scale: 1;
 }
